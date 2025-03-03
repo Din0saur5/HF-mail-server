@@ -27,9 +27,9 @@ app.post("/send-email", async (req, res) => {
       },
       body: JSON.stringify({
         from: "sales@higher-forms.com", // Change to your verified domain
-        to: "sales@higher-forms.com",
-        subject,
-        html,
+        to: to,
+        subject: subject,
+        html: html,
       }),
     });
 
