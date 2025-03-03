@@ -7,7 +7,7 @@ dotenv.config(); // Load environment variables
 
 const app = express();
 app.use(express.json());
-app.use(cors()); // Allows frontend to call API
+app.use(cors({origin: "*"})); // Allows frontend to call API
 
 const RESEND_API_KEY = process.env.RESEND_API_KEY; // Store in .env
 
