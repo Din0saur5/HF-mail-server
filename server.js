@@ -26,7 +26,7 @@ app.post("/send-email", async (req, res) => {
         "Authorization": `Bearer ${RESEND_API_KEY}`,
       },
       body: JSON.stringify({
-        from: "sales@hight-forms.com", // Change to your verified domain
+        from: "sales@higher-forms.com", // Change to your verified domain
         to: "sales@higher-forms.com",
         subject,
         html,
